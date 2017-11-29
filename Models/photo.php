@@ -8,7 +8,7 @@ class photo
   function __construct()
   {
     try {
-        $this->db = new PDO('mysql:host=localhost;dbname=devterest', 'user', 'user');
+        $this->db = new PDO('pgsql:host=ec2-46-137-174-67.eu-west-1.compute.amazonaws.com;dbname=d3fmoqhijn278b', 'bucrjmolqcpjoo', '7488cefd06f0942075be16c3c73fe5ae9106b5e8bb75ecffcf400ce3ea85e3e5');
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (Exception $e) {
         die('Erreur :' . $e->getMessage());
@@ -24,9 +24,8 @@ class photo
 
   public function getAllImage($search='')
   {
-    $req=$this->db->prepare("SELECT * FROM images WHERE description LIKE ?");
-    $search='%'.$search.'%';
-    $req->execute([$search]);
+    $search2='%'.$search.'%';
+    $req=$this->db->query("SELECT * FROM images WHERE description LIKE '$search2' ");
     $resultat=$req->fetchAll();
     return $resultat;
   }
@@ -49,8 +48,7 @@ class photo
   }
   public function getEditPhoto($photoId)
   {
-    $req=$this->db->prepare("SELECT * FROM images WHERE photo_id LIKE ?");
-    $req->execute([$photoId]);
+    $req=$this->db->query("SELECT * FROM images WHERE photo_id='$photoId'");
     $resultat=$req->fetchAll();
     return $resultat[0];
   }
