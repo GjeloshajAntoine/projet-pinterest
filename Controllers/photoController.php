@@ -19,7 +19,7 @@ class photoController
   {
     if ($_SESSION["logged"]) {
       if ($this->validation->photoType($photo["type"])) {
-        Image::configure(array('driver' => 'imagick'));
+        /*Image::configure(array('driver' => 'imagick'));
 
         $img = Image::make($photo["tmp_name"]);
 
@@ -32,8 +32,16 @@ class photoController
         $img->resize(75, 75);
 
         $img->save('admin-imageBank/'.$photo["name"]);
-
+*/
+        $tmp=$photo["tmp_name"];
+        $name=$photo["name"];
+        $type=$photo["type"];
+        $filepath1="big-imageBank/".$name;
+        $filepath2="mini-imageBank/".$name;
+        copy($tmp,$filepath1);
+        move_uploaded_file($tmp,$filepath2);
         $this->photo->newPhoto($photo["name"],$title,$description,$_SESSION["user_id"]);
+
         //model
         header("Location:index.php?action=home");
       }else {
