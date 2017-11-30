@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="Assets/remodal-default-theme.css">
 </head>
 <body>
-
+<?php include "Views/header.php" ?>
 <div class="grid">
 
   <div class="grid-sizer"></div>

@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="Assets/home.css">
@@ -11,6 +11,7 @@
 
 </head>
 <body>
+  <!--
 	<div class="header-wrapper">
 		<a href="index.php?action=home">
 		<div class="logo-header"><img alt="logo" src="https://i.imgur.com/awbs7PX.png"></div></a> <a href="index.php?action=uploadPage">
@@ -22,6 +23,7 @@
 		<div class="logout-header"><img alt="logo" src="https://i.imgur.com/UJ1Y6RI.png"></div></a>
 	</div>
  -->
+ <?php include "Views/header.php" ?>
 <div class="grid">
 
   <div class="grid-sizer"></div>

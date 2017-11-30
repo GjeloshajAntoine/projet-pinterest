@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 
 <body>
 
-
+<!--
     <div class="header-wrapper">
         <a href="index.php?action=home">
         <div class="logo-header"><img alt="logo" src="https://i.imgur.com/awbs7PX.png"></div></a> <a href="index.php?action=uploadPage">
@@ -25,6 +25,7 @@
         <div class="logout-header"><img alt="logo" src="https://i.imgur.com/UJ1Y6RI.png"></div></a>
       </div>
      -->
+     <?php include "Views/header.php" ?>
     <div style="margin-top:4%;" class="space"></div>
     <div class="formWrapper">
     <header class="uploadHeader"> <img src="Assets/images/logo.png" alt=""> <h2>Edit</h2> </header>

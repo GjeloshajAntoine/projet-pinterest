@@ -6,7 +6,7 @@ include 'Models/db.php';
 include 'Models/photo.php';
 require 'vendor/autoload.php';
 
-include "Views/head.php";
+//include "Views/header.php";
 session_start();
   use Intervention\Image\ImageManagerStatic as Image;
 
