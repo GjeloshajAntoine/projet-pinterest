@@ -6,19 +6,10 @@
 	<link href="Assets/footer.css" rel="stylesheet" type="text/css">
 	<title>test</title>
 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="Assets/remodal.css">
+	<link rel="stylesheet" href="Assets/remodal-default-theme.css">
 </head>
 <body>
-	<!-- HEADER STARTS HERE -->
-	<div class="header-wrapper">
-		<a href="index.php?action=home">
-		<div class="logo-header"><img alt="logo" src="https://i.imgur.com/awbs7PX.png"></div></a> <a href="index.php?action=uploadPage">
-		<div class="upload-header"><img alt="logo" src="https://i.imgur.com/yKgtMFi.png"></div></a>
-		<div class="search-header">
-			<input name="search-header-bis" placeholder="" type="text">
-		</div><a href="index.php?action=admin">
-		<div class="admin-header"><img alt="logo" src="https://i.imgur.com/PkGEZTB.png"></div></a> <a href="index.php?action=logout">
-		<div class="logout-header"><img alt="logo" src="https://i.imgur.com/UJ1Y6RI.png"></div></a>
-	</div><!-- HEADER ENDS HERE -->
 
 <div class="grid">
 
@@ -34,8 +25,8 @@ foreach ($data as $champImage) { ?>
 			<?php echo $champImage['title']; ?>
 		</div>
 	</div>
-		<a href="index.php?action=edit&id=<?php echo $champImage['photo_id'];?>">edit</a>
-		<a href="index.php?action=deletePhoto&id=<?php echo $champImage['photo_id'];?>">delete</a>
+		<a class="remodal-confirm" href="index.php?action=edit&id=<?php echo $champImage['photo_id'];?>">edit</a>
+		<a class="remodal-cancel" href="index.php?action=deletePhoto&id=<?php echo $champImage['photo_id'];?>">delete</a>
 
 	</div>
 <?php

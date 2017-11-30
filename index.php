@@ -5,6 +5,8 @@ include 'Helper/Validation.php';
 include 'Models/db.php';
 include 'Models/photo.php';
 require 'vendor/autoload.php';
+
+include "Views/head.php";
 session_start();
   use Intervention\Image\ImageManagerStatic as Image;
 

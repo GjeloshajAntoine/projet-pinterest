@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="Assets/home.css">
@@ -11,7 +11,6 @@
 
 </head>
 <body>
-	<!-- HEADER STARTS HERE -->
 	<div class="header-wrapper">
 		<a href="index.php?action=home">
 		<div class="logo-header"><img alt="logo" src="https://i.imgur.com/awbs7PX.png"></div></a> <a href="index.php?action=uploadPage">
@@ -21,8 +20,8 @@
 		</div><a href="index.php?action=admin">
 		<div class="admin-header"><img alt="logo" src="https://i.imgur.com/PkGEZTB.png"></div></a> <a href="index.php?action=logout">
 		<div class="logout-header"><img alt="logo" src="https://i.imgur.com/UJ1Y6RI.png"></div></a>
-	</div><!-- HEADER ENDS HERE -->
-
+	</div>
+ -->
 <div class="grid">
 
   <div class="grid-sizer"></div>
