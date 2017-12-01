@@ -88,6 +88,11 @@ class userController
         header("location:index.php");
       }
     }
+    public function logout()
+    {
+      $this->db->logout();
+      header("location:index.php");
+    }
 }
 
 

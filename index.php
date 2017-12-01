@@ -52,6 +52,9 @@ switch($action)
     case 'deletePhoto':
       $photoController->deletePhoto($id);
     break;
+    case 'logout':
+      $userController->logout();
+      break;
   default:
     include "Views/login.php";
   break;
